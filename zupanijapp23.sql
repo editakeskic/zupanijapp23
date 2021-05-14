@@ -26,3 +26,8 @@ create table mjesto(
 	naziv varchar(50) not null
 );
 
+alter table zupanija add foreign key (zupan) references zupan(sifra);
+
+alter table opcina add foreign key (zupanija) references zupanija(sifra);
+
+alter table mjesto add foreign key (opcina) references opcina(sifra);
