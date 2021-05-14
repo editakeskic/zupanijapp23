@@ -92,3 +92,9 @@ where sifra=8;
 
 update mjesto set naziv='Nova Vas'
 where sifra=7;
+
+
+delete from mjesto where sifra>8;
+
+delete from opcina where sifra>4;
+
