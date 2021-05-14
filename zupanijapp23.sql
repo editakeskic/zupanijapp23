@@ -78,3 +78,17 @@ insert into mjesto(opcina,naziv) values
 (6,'Rovinj'),
 (6,'Rovinjsko selo');
 
+update mjesto set naziv='Brijesce'
+where sifra=1;
+
+update mjesto set naziv='Durdanci'
+where sifra=10;
+
+update mjesto set naziv='Novi Perkovci'
+where sifra=9;
+
+update mjesto set naziv='Vrvari'
+where sifra=8;
+
+update mjesto set naziv='Nova Vas'
+where sifra=7;
