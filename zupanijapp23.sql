@@ -34,7 +34,7 @@ alter table mjesto add foreign key (opcina) references opcina(sifra);
 
 show tables;
 
-select * from zupan;
+#select * from zupan;
 
 #1-3
 insert into zupan(ime,prezime) values
@@ -42,7 +42,7 @@ insert into zupan(ime,prezime) values
 ('Ante','Antić'),
 ('Ana','Ančić');
 
-select * from zupanija;
+#select * from zupanija;
 
 #1-3
 insert into zupanija(zupan,naziv) values
@@ -50,7 +50,7 @@ insert into zupanija(zupan,naziv) values
 (1,'Vukovarsko-srijemska'),
 (3,'Istarska');
 
-select * from opcina;
+#select * from opcina;
 
 #1-6
 insert into opcina(zupanija,naziv) values
@@ -61,7 +61,7 @@ insert into opcina(zupanija,naziv) values
 (1,'Đakovo'),
 (3,'Rovinj');
 
-select * from mjesto;
+#select * from mjesto;
 
 #1-12
 insert into mjesto(opcina,naziv) values
@@ -78,6 +78,7 @@ insert into mjesto(opcina,naziv) values
 (6,'Rovinj'),
 (6,'Rovinjsko selo');
 
+# promijeniti 5 naziva mjesta
 update mjesto set naziv='Briješće'
 where sifra=1;
 
@@ -93,7 +94,7 @@ where sifra=8;
 update mjesto set naziv='Nova Vas'
 where sifra=7;
 
-
+# obrisati 2 općine
 delete from mjesto where sifra>8;
 
 delete from opcina where sifra>4;
