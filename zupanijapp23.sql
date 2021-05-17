@@ -38,15 +38,15 @@ select * from zupan;
 
 #1-3
 insert into zupan(ime,prezime) values
-('Ivo','Ivic'),
-('Ante','Antic'),
-('Ana','Ancic');
+('Ivo','Ivić'),
+('Ante','Antić'),
+('Ana','Ančić');
 
 select * from zupanija;
 
 #1-3
 insert into zupanija(zupan,naziv) values
-(2,'Osjecko-baranjska'),
+(2,'Osječko-baranjska'),
 (1,'Vukovarsko-srijemska'),
 (3,'Istarska');
 
@@ -57,8 +57,8 @@ insert into opcina(zupanija,naziv) values
 (1,'Osijek'),
 (2,'Vinkovci'),
 (2,'Vukovar'),
-(3,'Porec'),
-(1,'Dakovo'),
+(3,'Poreč'),
+(1,'Đakovo'),
 (3,'Rovinj');
 
 select * from mjesto;
@@ -66,22 +66,22 @@ select * from mjesto;
 #1-12
 insert into mjesto(opcina,naziv) values
 (1,'Brijest'),
-(1,'Tvrdavica'),
+(1,'Tvrđavica'),
 (2,'Vinkovci'),
 (2,'Mirkovci'),
 (3,'Vukovar'),
 (3,'Grabovo'),
-(4,'Porec'),
+(4,'Poreč'),
 (4,'Veleniki'),
-(5,'Dakovo'),
-(5,'Piskorevci'),
+(5,'Đakovo'),
+(5,'Piškorevci'),
 (6,'Rovinj'),
 (6,'Rovinjsko selo');
 
-update mjesto set naziv='Brijesce'
+update mjesto set naziv='Briješće'
 where sifra=1;
 
-update mjesto set naziv='Durdanci'
+update mjesto set naziv='Đurđanci'
 where sifra=10;
 
 update mjesto set naziv='Novi Perkovci'
